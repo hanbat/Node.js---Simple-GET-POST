@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  h1= title
+  p Hello, there #{name}
+
+
+  form(action='/post',method='post')
+    input(id='name',type='text',value='',placeholder='Type Your Name',name='name')
+    input(type='submit',value='Submit',data-transition='fade', data-theme='c')
